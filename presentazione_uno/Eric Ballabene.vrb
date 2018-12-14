@@ -1,0 +1,15 @@
+\frametitle{Personalizzazzione}
+  \framesubtitle{Come diavolo faccio a togliere la barra di navigazione?}
+  In fondo non \`e male, ma se proprio volete\ldots avete cinque livelli
+  di personalizzazione accessibili tramite i comandi:
+  \begin{verbatim}
+    \usetheme[opzioni]{nome del tema}
+    \useinnertheme[opzioni]{nome del tema}
+    \useoutertheme[opzioni]{nome del tema}
+    \usecolortheme[opzioni]{nome del tema}
+    \usefonttheme[opzioni]{nome del tema}
+  \end{verbatim}
+
+  Parlando d'altro\ldots se volete usare l'ambiente {\tt verbatim} dovete
+  usare la \emph{keyword} {\tt fragile} all'apertura del \emph{frame}
+  (vedi il sorgente).
