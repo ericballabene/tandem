@@ -15,3 +15,8 @@ performed by ATLAS.
 How HistFitter works:
 
 
+
+
+
+To begin with the project, we executed a tutorial in HistFitter on real data containing events about the production of supersimmetry particles along with a lepton (inclusive lepton). Before the fit, the plot gives an idea of the signal and background yields (here the signal is red and background is green), along with the data (black mark). After the fit is performed, you can see that those yields are forced as to be equal to the data yield. The fit change the contribution of signal and background in order to be representative of the data. Finally, this is the correlation matrix. Here you can see that whereas the luminosity and other systematic uncertainties are not correlated each other, the signal strength mu_sig is correlated with those other quantities. All these parameters have been evaluated by the histfitter tool.
+
