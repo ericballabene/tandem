@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.15)  14 DEC 2018 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.15)  14 DEC 2018 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -779,6 +779,10 @@ Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 emetree.sty
 Package: beamerouterthemetree 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/themes/color/beamercolorth
+emebeaver.sty
+Package: beamercolorthemebeaver 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 22.
@@ -878,8 +882,6 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
 LaTeX Info: Redefining \nameref on input line 27.
-
-(./Eric Ballabene.out) (./Eric Ballabene.out)
 \@outlinefile=\write5
 \openout5 = `"Eric Ballabene.out"'.
 
@@ -1064,9 +1066,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
  (./Eric Ballabene.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
-Package rerunfilecheck Info: File `"Eric Ballabene".out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
+
+Package rerunfilecheck Warning: File `"Eric Ballabene".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Eric Ballabene".out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1074,18 +1082,18 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 17498 strings out of 493014
- 332705 string characters out of 6133350
- 416650 words of memory out of 5000000
- 20596 multiletter control sequences out of 15000+600000
+ 17506 strings out of 493014
+ 333059 string characters out of 6133350
+ 416780 words of memory out of 5000000
+ 20605 multiletter control sequences out of 15000+600000
  10978 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,55p,918b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,55p,918b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on "Eric Ballabene.pdf" (5 pages, 598456 bytes).
+Output written on "Eric Ballabene.pdf" (5 pages, 598604 bytes).
 PDF statistics:
  267 PDF objects out of 1000 (max. 8388607)
  185 compressed objects within 2 object streams
