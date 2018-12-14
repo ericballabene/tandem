@@ -19,7 +19,7 @@ The key idea in how it works is the definition of three regions obtained by
 applying selections to a set of kinematic observables:
 - signal region: region where a particular model that we want to study (SUSY
   in our case) predicts a significant excess of events over the predicted
-backgound level;
+background level;
 - control region: specifically designed to be basically free of signal
   contamination, these region is used to control the dominant background by
 comparing it to data samples;
