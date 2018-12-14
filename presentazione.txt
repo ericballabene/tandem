@@ -13,5 +13,33 @@ been the standard statistical tool in searches for supersymmetric particles
 performed by ATLAS.
 
 How HistFitter works:
+HistFitter is a tool which allows to perform complete analysis by using a
+simple configuration file written in Python.
+The key idea in how it works is the definition of three regions obtained by
+applying selections to a set of kinematic observables:
+- signal region: region where a particular model that we want to study (SUSY
+  in our case) predicts a significant excess of events over the predicted
+backgound level;
+- control region: specifically designed to be basically free of signal
+  contamination, these region is used to control the dominant background by
+comparing it to data samples;
+- validation region: placed in between the other two regions, it is used to
+  validate the model used to predict the number of bkg events in the SR.
+
+The process is shown schematically in Fig. (?)
+
+After the introduction of these regions, we can summarize the analysis
+strategy flow in this way: by fitting the model to the data, the observed
+event counts in CR are used to normalize background estimates in all regions;
+the result goes under the name of "normalized background predictions". These
+are then used for extrapolation into the VRs and SRs.
+
+questa parte non saprei se metterla
+We point out that the key ingredients of the fitting procedure are the so
+called transfer factors, which basically allow the observations in the CR to
+be converted into bacground estimates in the SRs.
+
+
+
 
 
