@@ -9,24 +9,37 @@ a chargino and a neutralino, from the hard scattering collision of two protons,
 in association with a Higgs boson and missing transverse momentum at the centre 
 of mass energy of 13 Teraelectronvolt, recorded with the ATLAS detector. 
 
-Since the Large Hadron Collider has this large energy in the center of mass it can produce very heavy particles like the weakly interacting supersymmetric ones. These particles are very interesting for several reasons and, if discovered, they could solve a series of problems left open by the Standard Model. Through chargino and neutralino data, we want to estimate the background and look for rare events. 
+Since the Large Hadron Collider has this large energy in the center of mass it can 
+produce very heavy particles like the weakly interacting supersymmetric ones. These
+ particles are very interesting for several reasons and, if discovered, they could 
+solve a series of problems left open by the Standard Model. Through chargino and 
+neutralino data, we want to estimate the background and look for rare events. 
 
-In the SUSY scenario, the lightest of the neutralinos together with the charginos, represent the mass eigenstates formed from the mixture of the electroweak and Higgs bosons’ gauge eigenstate superpartners. The way of decay of the the W and H 
-boson determines the so called hadronic or leptonic channel. Chargino load interacts exactly like a loaded W, while neutralizing as a zeta or higgs SM. We can distinguish 
+In the SUSY scenario, the lightest of the neutralinos together with the charginos, 
+represent the mass eigenstates formed from the mixture of the electroweak and Higgs
+ bosons’ gauge eigenstate superpartners. The way of decay of the the W and H 
+boson determines the so called hadronic or leptonic channel. Chargino load interacts
+ exactly like a loaded W, while neutralizing as a zeta or higgs SM. We can distinguish 
 between four independent and mutually exclusive analysis channels based on the 
 visible final state. These are the feynmann diagrams of the processes.
 
--The first one is called 0 leptons two bottom quark-antiquark pairs, characterized by the presence of the hadronic decays of both the W and H.  
+-The first one is called 0 leptons two bottom quark-antiquark pairs, characterized 
+by the presence of the hadronic decays of both the W and H.  
 It is the fully hadronic analysis channel and exploits the large branching ratios 
 for both the W and H bosons. Particular event selections based on the masses of 
-both the W and Higgs boson candidates, the presence of exactly two b-jets, and the kinematic requests are required in order to reduce the
+both the W and Higgs boson candidates, the presence of exactly two b-jets, and 
+the kinematic requests are required in order to reduce the
 significant backgrounds processes.  
--The second channel is called 1 lepton bottom quark-antiquark and it is characterized by the hadronic decay of the Higgs boson and the leptonic decay of the W boson. The events 
+-The second channel is called 1 lepton bottom quark-antiquark and it is characterized
+ by the hadronic decay of the Higgs boson and the leptonic decay of the W boson. The events 
 considered in the one lepton and two b-jets channel are also recorded with a 
 missing energy trigger. Events with exactly one electron or muon are selected  if they
 also contain two or three jets with pT > 25 GeV, two of which must be b-tagged.  
--Another channel is the 1lepton diphoton channel with the leptonic decay of the W and the Higgs boson decay into two photons;
-Events are selected using a diphoton trigger and missing transverse energy requested to be > 35 GeV and ET > 25 GeV for the leading and sub-leading photons, respectively. For these events, the event selection requires exactly one lepton (e or μ) with pT > 25 GeV.
+-Another channel is the 1lepton diphoton channel with the leptonic decay of the W and the
+ Higgs boson decay into two photons; Events are selected using a diphoton trigger and 
+missing transverse energy requested to be > 35 GeV and ET > 25 GeV for the leading and
+ sub-leading photons, respectively. For these events, the event selection requires 
+exactly one lepton (e or μ) with pT > 25 GeV.
  -Finally, there is the multilepton channel via W, Z, τ and leptonic W decays.
 Here there are events in the 3l signal regions are categorized
 according to flavor and charge-sign combinations of the leptons 
@@ -34,7 +47,16 @@ in the event. Appropriate selection criteria to each region are applied
 in order to reject lepton-rich background processes while at the same
 time maximizing signal significance.  
 
-The main backgrounds are two: the one coming from top quark antiquark production. Each quark then decay into a W boson and a bottom quark, thus 2 bottom quarks and two Ws. If the W is not reconstructed and W decay leptonically, the final state can be confused as the 1 lepton bb channel. The other one is the quark-antiquark annichilation to produce the W boson from the leading interaction in association to jets coming from the fragmentation and hadronization of the protons. To estimate these background we cannot use only the Monte Carlo samples because the modeling of these processes is not precise and we have to make a fit. We identify different control region with a background through a software called HistFitter, whose analysis is based on.
+The main backgrounds are two: the one coming from top quark antiquark production. 
+Each quark then decay into a W boson and a bottom quark, thus 2 bottom quarks and two Ws.
+ If the W is well not reconstructed and it decays leptonically, the final state can be 
+confused as the 1 lepton bb channel. The other one is the quark-antiquark annichilation 
+to produce the W boson from the leading interaction in association to jets coming from the
+ fragmentation and hadronization of the protons. To estimate these background we cannot 
+use only the Monte Carlo samples because the modeling of these processes is not precise 
+and we have to make a fit. We identify different control region with a background through 
+a software called HistFitter, whose analysis is based on. I leave you int he hands of 
+Massimiliano, who will clarify this point.
 
 
 ---MASSIMILIANO---
