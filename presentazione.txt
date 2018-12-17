@@ -1,82 +1,72 @@
 Hi. We are involved in a project, me and my tandem collegue Massimiliano,
 about supersimmetry and supersimmetry particles. Our goal is to perform a
-data analysis which benefits the signal with respect to the background as 
+data analysis which benefits the signal with respect to the background as
 well as the sensitivity, defined as the Signal divided for signal plus
 background events. Our signal is the production of two supersimmetry particles,
-a chargino and a neutralino, from the hard scattering collision of two protons, 
-in association with a Higgs boson and missing transverse momentum at the centre 
-of mass energy of 13 Teraelectronvolt, recorded with the ATLAS detector. In the 
-SUSY scenario, the lightest of the neutralinos together with the charginos, represent the mass eigenstates formed from the mixture of the electroweak and Higgs bosons’ gauge eigenstate superpartners. The way of decay of the the W and H 
-boson determines the so called hadronic and leptonic channel. We can distinguish 
-between four independent and mutually exclusive analysis channels based on the 
-visible final state. 
+a chargino and a neutralino, from the hard scattering collision of two protons,
+in association with a Higgs boson and missing transverse momentum at the centre
+of mass energy of 13 Teraelectronvolt, recorded with the ATLAS detector. In the
+SUSY scenario, the lightest of the neutralinos together with the charginos, represent the mass eigenstates formed from the mixture of the electroweak and Higgs bosons’ gauge eigenstate superpartners. The way of decay of the the W and H
+boson determines the so called hadronic and leptonic channel. We can distinguish
+between four independent and mutually exclusive analysis channels based on the
+visible final state.
 
 -The first one is called 0 leptons a bottom quark-antiquark, characterized by the presence of the hadronic decays of both the W and H.  
-It is the fully hadronic analysis channel and exploits the large branching ratios 
-for both the W and H bosons. Particular event selections based on the masses of 
+It is the fully hadronic analysis channel and exploits the large branching ratios
+for both the W and H bosons. Particular event selections based on the masses of
 both the W and Higgs boson candidates, the presence of exactly two b-jets, and the kinematic requests are required in order to reduce the
 significant backgrounds processes.  
--The second channel is called 1 lepton bottom quark-antiquark and it is characterized by the hadronic decay of the Higgs boson and the leptonic decay of the W boson. The events 
-considered in the one lepton and two b-jets channel are also recorded with a 
+-The second channel is called 1 lepton bottom quark-antiquark and it is characterized by the hadronic decay of the Higgs boson and the leptonic decay of the W boson. The events
+considered in the one lepton and two b-jets channel are also recorded with a
 missing energy trigger. Events with exactly one electron or muon are selected  if they
 also contain two or three jets with pT > 25 GeV, two of which must be b-tagged.  
 -Another channel is the 1lepton diphoton channel with the leptonic decay of the W and the Higgs boson decay into two photons;
 Events are selected using a diphoton trigger and missing transverse energy requested to be > 35 GeV and ET > 25 GeV for the leading and sub-leading photons, respectively. For these events, the event selection requires exactly one lepton (e or μ) with pT > 25 GeV.
  -Finally, there is the multilepton channel via W, Z, τ and leptonic W decays.
 Here there are events in the 3l signal regions are categorized
-according to flavor and charge-sign combinations of the leptons 
+according to flavor and charge-sign combinations of the leptons
 in the event. Appropriate selection criteria to each region are applied
 in order to reject lepton-rich background processes while at the same
 time maximizing signal significance.  
 
- Our analysis is performed through a software tool called HistFitter. Hist
+The basic idea to study the main backgrounds that we just presented is the definition of three regions obtained by
+applying selections to a set of kinematic observables:
+- first of all we define the signal region: region where a particular model that we want to study (SUSY
+  in our case) predicts a significant excess of events over the predicted
+background level; note that after the definition we don't work in the Signal
+Regions anymore until the end of the analysis, in order to not bias the
+result;
+- then we define the control region: specifically designed to be basically free of signal
+  contamination, here we will perform some fits in order to extimate the
+actual composition of the background;
+- finally we define the validation region: placed in between the other two
+  regions, we use the VR to check if the bkg composition that we obtained by
+fitting the model to the data in the CR is the right one.
+At the very end of this process we come back to the SR and obtain the results
+of the analysis.
+
+Here the analysis flow is shown in more detail: by fitting the model to the data, the observed
+event counts in CR are used to normalize background estimates in all regions;
+the result goes under the name of "normalized background predictions". These
+are then used for extrapolation into the VRs and SRs. You can also see these
+"transfer factors" which are the ratios of expected event counts between Sr
+and Cr. In particular they allow the observations in the CR to be converted
+into bkg estimates inthe Sr.
+
+This entire analysis flow is performed through a software tool called HistFitter. Hist
 Fitter is based on ROOT and Roofit libraries and has been used extensively by
 the ATLAS Collaboration to analyze big datasets originating from proton-proton
 collisions at the Large Hadron Collider at CERN. Since 2012 HistFitter has
 been the standard statistical tool in searches for supersymmetric particles
 performed by ATLAS.
 
-
-
-
-How HistFitter works:
-HistFitter is a tool which allows to perform complete analysis by using a
-simple configuration file written in Python.
-The key idea in how it works is the definition of three regions obtained by
-applying selections to a set of kinematic observables:
-- signal region: region where a particular model that we want to study (SUSY
-  in our case) predicts a significant excess of events over the predicted
-background level;
-- control region: specifically designed to be basically free of signal
-  contamination, these region is used to control the dominant background by
-comparing it to data samples;
-- validation region: placed in between the other two regions, it is used to
-  validate the model used to predict the number of bkg events in the SR.
-
-The process is shown schematically in Fig. (?)
-
-After the introduction of these regions, we can summarize the analysis
-strategy flow in this way: by fitting the model to the data, the observed
-event counts in CR are used to normalize background estimates in all regions;
-the result goes under the name of "normalized background predictions". These
-are then used for extrapolation into the VRs and SRs.
-
-questa parte non saprei se metterla
-We point out that the key ingredients of the fitting procedure are the so
-called transfer factors, which basically allow the observations in the CR to
-be converted into background estimates in the SRs.
-
-
-
 To begin with the project, we executed a tutorial in HistFitter on real data containing
-events about the production of supersimmetry particles along with a lepton (inclusive lepton). 
-Before the fit, the plot gives an idea of the signal and background yields (here the signal 
-is red and background is green), along with the data (black mark). 
-After the fit is performed, you can see that those yields are forced as to
-be equal to the data yield. The fit change the contribution of signal and 
-background in order to be representative of the data. Finally, this is the 
-correlation matrix. Here you can see that whereas the luminosity and other
-systematic uncertainties are not correlated each other, the signal strength
-mu_sig is correlated with those other quantities. All these parameters have
-been evaluated by the histfitter tool.
+events about the production of supersimmetry particles along with a lepton (inclusive lepton).
+These plots show the results of a simple analysis performed on a control
+region, where we force data to match the results of the model we use (SM in
+this case). Before the fit, the data do not agree with the prediction. After
+the fit, by forcing the data to match the model, we obtain a new distribution
+of signal and background. We show the correlation matrix, which shows the
+correlation between the variables and that we need to know in order to
+properly propagate uncertainties.
 
