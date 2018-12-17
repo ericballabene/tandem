@@ -1,3 +1,5 @@
+---ERIC---
+
 Hi. We are involved in a project, me and my tandem collegue Massimiliano,
 about supersimmetry and supersimmetry particles. Our goal is to perform a
 data analysis which benefits the signal with respect to the background as
@@ -5,13 +7,16 @@ well as the sensitivity, defined as the Signal divided for signal plus
 background events. Our signal is the production of two supersimmetry particles,
 a chargino and a neutralino, from the hard scattering collision of two protons,
 in association with a Higgs boson and missing transverse momentum at the centre
-of mass energy of 13 Teraelectronvolt, recorded with the ATLAS detector. In the
-SUSY scenario, the lightest of the neutralinos together with the charginos, represent the mass eigenstates formed from the mixture of the electroweak and Higgs bosons’ gauge eigenstate superpartners. The way of decay of the the W and H
-boson determines the so called hadronic and leptonic channel. We can distinguish
-between four independent and mutually exclusive analysis channels based on the
-visible final state.
+of mass energy of 13 Teraelectronvolt, recorded with the ATLAS detector.
 
--The first one is called 0 leptons a bottom quark-antiquark, characterized by the presence of the hadronic decays of both the W and H.  
+Since the Large Hadron Collider has this large energy in the center of mass it can produce very heavy particles like the weakly interacting supersymmetric ones. These particles are very interesting for several reasons and, if discovered, they could solve a series of problems left open by the Standard Model. Through chargino and neutralino data, we want to estimate the background and look for rare events.
+
+In the SUSY scenario, the lightest of the neutralinos together with the charginos, represent the mass eigenstates formed from the mixture of the electroweak and Higgs bosons’ gauge eigenstate superpartners. The way of decay of the the W and H
+boson determines the so called hadronic or leptonic channel. Chargino load interacts exactly like a loaded W, while neutralizing as a zeta or higgs SM. We can distinguish
+between four independent and mutually exclusive analysis channels based on the
+visible final state. These are the feynmann diagrams of the processes.
+
+-The first one is called 0 leptons two bottom quark-antiquark pairs, characterized by the presence of the hadronic decays of both the W and H.  
 It is the fully hadronic analysis channel and exploits the large branching ratios
 for both the W and H bosons. Particular event selections based on the masses of
 both the W and Higgs boson candidates, the presence of exactly two b-jets, and the kinematic requests are required in order to reduce the
@@ -29,7 +34,19 @@ in the event. Appropriate selection criteria to each region are applied
 in order to reject lepton-rich background processes while at the same
 time maximizing signal significance.  
 
-The basic idea to study the main backgrounds that we just presented is the definition of three regions obtained by
+The main backgrounds are two: the one coming from top quark antiquark production. Each quark then decay into a W boson and a bottom quark, thus 2 bottom quarks and two Ws. If the W is not reconstructed and W decay leptonically, the final state can be confused as the 1 lepton bb channel. The other one is the quark-antiquark annichilation to produce the W boson from the leading interaction in association to jets coming from the fragmentation and hadronization of the protons. To estimate these background we cannot use only the Monte Carlo samples because the modeling of these processes is not precise and we have to make a fit. We identify different control region with a background through a software called HistFitter, whose analysis is based on. I leave you int he hands of Massimiliano, who will clarify this point.
+
+---MASSIMILIANO---
+
+ Our analysis is performed through a software tool called HistFitter. Hist
+Fitter is based on ROOT and Roofit libraries and has been used extensively by
+the ATLAS Collaboration to analyze big datasets originating from proton-proton
+collisions at the Large Hadron Collider at CERN. Since 2012 HistFitter has
+been the standard statistical tool in searches for supersymmetric particles
+performed by ATLAS.
+HistFitter is a tool which allows to perform complete analysis by using a
+simple configuration file written in Python.
+The key idea in how it works is the definition of three regions obtained by
 applying selections to a set of kinematic observables:
 - first of all we define the signal region: region where a particular model that we want to study (SUSY
   in our case) predicts a significant excess of events over the predicted
@@ -53,13 +70,6 @@ are then used for extrapolation into the VRs and SRs. You can also see these
 and Cr. In particular they allow the observations in the CR to be converted
 into bkg estimates inthe Sr.
 
-This entire analysis flow is performed through a software tool called HistFitter. Hist
-Fitter is based on ROOT and Roofit libraries and has been used extensively by
-the ATLAS Collaboration to analyze big datasets originating from proton-proton
-collisions at the Large Hadron Collider at CERN. Since 2012 HistFitter has
-been the standard statistical tool in searches for supersymmetric particles
-performed by ATLAS.
-
 To begin with the project, we executed a tutorial in HistFitter on real data containing
 events about the production of supersimmetry particles along with a lepton (inclusive lepton).
 These plots show the results of a simple analysis performed on a control
@@ -69,4 +79,7 @@ the fit, by forcing the data to match the model, we obtain a new distribution
 of signal and background. We show the correlation matrix, which shows the
 correlation between the variables and that we need to know in order to
 properly propagate uncertainties.
+
+Misurare la sensitività di histfitter
+Il prossimo passo è quello di fare il fit con i dati veri e attuali di ATLAS
 
